@@ -52,7 +52,6 @@
 #include "cmsis_os.h"
 #include "fatfs.h"
 #include "lwip.h"
-#include "lwip/api.h"
 #include "usb_host.h"
 
 /* USER CODE BEGIN Includes */
@@ -733,7 +732,7 @@ static void MX_SAI2_Init(void)
   hsai_BlockB2.Init.MonoStereoMode = SAI_STEREOMODE;
   hsai_BlockB2.Init.CompandingMode = SAI_NOCOMPANDING;
   hsai_BlockB2.Init.TriState = SAI_OUTPUT_NOTRELEASED;
-  hsai_BlockB2.FrameInit.FrameLength = 24;
+  hsai_BlockB2.FrameInit.FrameLength = 8;
   hsai_BlockB2.FrameInit.ActiveFrameLength = 1;
   hsai_BlockB2.FrameInit.FSDefinition = SAI_FS_STARTFRAME;
   hsai_BlockB2.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
@@ -1429,7 +1428,7 @@ void tcpecho_init(void)
 void StartDefaultTask(void const * argument)
 {
   /* init code for FATFS */
-//  MX_FATFS_Init();
+  MX_FATFS_Init();
 
   /* init code for USB_HOST */
   MX_USB_HOST_Init();
