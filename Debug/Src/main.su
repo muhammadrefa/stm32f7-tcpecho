@@ -1,0 +1,7 @@
+main.c:1353:13:tcpecho_thread	40	static
+main.c:254:6:SystemClock_Config	224	static
+main.c:155:5:main	176	static
+main.c:1418:6:tcpecho_init	16	static
+main.c:1429:6:StartDefaultTask	8	static
+main.c:1458:6:HAL_TIM_PeriodElapsedCallback	0	static
+main.c:1477:6:_Error_Handler	0	static

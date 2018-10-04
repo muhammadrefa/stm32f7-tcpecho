@@ -1,0 +1,6 @@
+stm32f7xx_it.c:58:6:SysTick_Handler	0	static
+stm32f7xx_it.c:79:6:TIM6_DAC_IRQHandler	0	static
+stm32f7xx_it.c:93:6:ETH_IRQHandler	0	static
+stm32f7xx_it.c:107:6:OTG_FS_IRQHandler	0	static
+stm32f7xx_it.c:121:6:LTDC_IRQHandler	0	static
+stm32f7xx_it.c:135:6:DMA2D_IRQHandler	0	static
