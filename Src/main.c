@@ -52,6 +52,7 @@
 #include "cmsis_os.h"
 #include "fatfs.h"
 #include "lwip.h"
+#include "lwip/api.h"
 #include "usb_host.h"
 
 /* USER CODE BEGIN Includes */
@@ -1386,7 +1387,7 @@ static void tcpecho_thread(void *arg)
           {
             do
             {
-              netbuf_data(buf, &data, &len);
+               netbuf_data(buf, &data, &len);
               netconn_write(newconn, data, len, NETCONN_COPY);
 
             }
